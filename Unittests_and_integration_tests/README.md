@@ -1,4 +1,5 @@
-Unittests and Integration Tests
+# Unittests and Integration Tests
+
 Unit testing is the process of testing that a particular function returns expected results for different set of inputs. A unit test is supposed to test standard inputs and corner cases. A unit test should only test the logic defined inside the tested function. Most calls to additional functions should be mocked, especially if they make network or database calls.
 
 The goal of a unit test is to answer the question: if everything defined outside this function works as expected, does this function work as expected?
@@ -9,8 +10,9 @@ Integration tests will test interactions between every part of your code.
 
 Execute your tests with
 
-Learning Objectives
+## Learning Objectives
+
 At the end of this project, expected to be able to explain to anyone, without the help of Google:
 
-The difference between unit and integration tests.
-Common testing patterns such as mocking, parametrizations and fixtures
+-   The difference between unit and integration tests.
+-   Common testing patterns such as mocking, parametrizations and fixtures
