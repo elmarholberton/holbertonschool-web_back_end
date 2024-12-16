@@ -1,7 +1,15 @@
-import EVCar from './100-evcar.js';
+import { queryAPI, weakMap } from "./100-weak.js";
 
-const ec1 = new EVCar("Tesla", "Turbo", "Red", "250");
-console.log(ec1);
+const endpoint = { protocol: 'http', name: 'getUsers' };
+weakMap.get(endpoint);
 
-const ec2 = ec1.cloneCar();
-console.log(ec2);
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);

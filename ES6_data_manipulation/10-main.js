@@ -1,14 +1,8 @@
-import Car from "./10-car.js";
+import updateUniqueItems from "./10-update_uniq_items.js";
+import groceriesList from "./9-groceries_list.js";
 
-class TestCar extends Car {}
+const map = groceriesList();
+console.log(map);
 
-const tc1 = new TestCar("Nissan", "Turbo", "Pink");
-const tc2 = tc1.cloneCar();
-
-console.log(tc1);
-console.log(tc1 instanceof TestCar);
-
-console.log(tc2);
-console.log(tc2 instanceof TestCar);
-
-console.log(tc1 == tc2);
+updateUniqueItems(map)
+console.log(map);
